@@ -65,17 +65,17 @@ function draw() {
 
   if (keypointsHand.length > 0) {
     // console.log(keypointsHand.length);
-    console.log(keypointsHand[0].length); // 結果を得る
-    for (let i = 0; i < keypointsHand[0].length; i += 1) {
-      const indexTip = keypointsHand[0][i];
-      image(fire_image,indexTip.x * displayWidth-50, indexTip.y * displayHeight-50,100,100)
+//     console.log(keypointsHand[0].length); // 結果を得る
+//     for (let i = 0; i < keypointsHand[0].length; i += 1) {
+//       const indexTip = keypointsHand[0][i];
+//       image(fire_image,indexTip.x * displayWidth-50, indexTip.y * displayHeight-50,100,100)
       
-    }
-    // const indexTip = keypointsHand[0][8];
+//     }
+    const indexTip = keypointsHand[0][8];
     // console.log(indexTip);
 
-    // ellipse(indexTip.x * displayWidth, indexTip.y * displayHeight, 50);
-    // image(fire_image,indexTip.x * displayWidth-100, indexTip.y * displayHeight-100,200,200)
+    ellipse(indexTip.x * displayWidth, indexTip.y * displayHeight, 50);
+    image(fire_image,indexTip.x * displayWidth-100, indexTip.y * displayHeight-100,200,200)
     // const indexTip4 = keypointsHand[0][4];
     // console.log(indexTip4);
 
